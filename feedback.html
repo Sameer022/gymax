@@ -301,7 +301,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<span id="count"></span>
 			</div><br/><br/><br/><br/></br>
 			<div style="color:red;display:none" id="correct">Please correct the above inputs</div>
-				<button type="button" class="btn btn-primary" onclick="checkAllFunctions();">Submit your feedback</button>								
+				<button type="button" class="btn btn-primary" onclick="checkAllFunctions(); onClick="dataLayer.push({
+'event': 'formClick',
+'actionType':'Submit Your Feedback'
+});"">Submit your feedback</button>								
 				&nbsp;
 				
 				
